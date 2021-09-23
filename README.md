@@ -57,7 +57,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
+___
 ## 4.0 Notes
 ### 4.1 Learning Objectives
 [Back to table of contents](#table-of-contents)
@@ -66,7 +66,9 @@ SOFTWARE.
 - Write documentation that is easy to follow
 - develop multi-page applications using react library
 - implement a user authentication system
-- implement data structures when manipulating or calculating data 
+- implement data structures when manipulating or calculating data
+- write test for the backend and front end 
+- write custom hooks for frontend
 
 ### 4.2 User stories
 [Back to table of contents](#table-of-contents)
@@ -81,5 +83,30 @@ As a librarian, I wants to see the most common genres so that I may possible exp
 As a librarian, I want to see the most popular books so that I may order more copies of those books.
 
 #### US-4
-As a librarian, I want to see the most popular authors so that I may expand our books selection from those authors. 
+As a librarian, I want to see the most popular authors so that I may expand our books selection from those authors.
+
+### 4.3 Styling
+Styling will be minimal since the primary goal is to build a robust backend. I plan on using bootstrap to style this project. See [pages](#44-pages) for more details about frontend choices.
+
+### 4.4 Pages
+#### 4.4.1 Home Page
+This page consist of the first 4 user stories. Each story will be a separate component. Each component will be a card on the home page. The cards will be place in a 2 by 2 cluster at centered near the top of the page.
+##### US-1 Component
+###### Endpoints
+`API_BASE_URL/books?total=true ===> total number of books`
+`API_BASE_URL/borrows?currentlyBorrowed=true ===> number of books currently checked out`
+`API_BASE_URL/accounts?total=true ===> total number of accounts`
+
+##### US-2 Component
+###### Endpoints
+`API_BASE_URL/books?popularGenre=true`
+##### US-3 Component
+##### Endpoints 
+`API_BASE_URL/books/popularBooks=true`
+
+##### US-4 Component
+#### Endpoints
+`API_BASE_URL/authors?popularAuthors=true`
+
+
 
